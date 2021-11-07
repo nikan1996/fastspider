@@ -6,10 +6,14 @@ class ToScrapeV1(DefaultSpider):
     name = 'toscrape'
     version = 'v1'
     spider_config = {
-        ''
     }
+
     def run(self):
-        r = Request
-        self.send(r)
-    def parse(self,response):
-        content = response.content
+        r = Request(url="https://www.baidu.com/", method="GET")
+        response = self.send(r)
+        print(response.text())
+
+
+if __name__ == '__main__':
+    script = ToScrapeV1()
+    script.run()
