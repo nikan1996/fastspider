@@ -6,7 +6,11 @@ Fast develop, fast deploy spider.
 Now it begins as a toy project.
 
 # Design
-- [x] easy to run
+- [x] Easy to run
 - [ ] Concurrent download and parse
 - [ ] Concurrency limit
 - [ ] Local and remote download
+- [ ] Webui and desktop ui
+
+
+# Development Environment
